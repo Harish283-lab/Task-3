@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUp4mzekWcCkn3aSZQ2vrWB7Os8CYCtiMLlA&s"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body onload="handleStart()">
+    <div class="main">
+      <div class="header">
+        <b>Let's Play Dice</b>
+        <h1 id="player-move">Player-1 To Play</h1>
+      </div>
+      <div class="game">
+        <div class="player">
+          <h3>Player-1</h3>
+          <h1 id="player1-score">0</h1>
+          <button
+            type="button"
+            id="player1-button"
+            onclick="handleDiceRoll('Player-1')"
+          >
+            Roll Now
+          </button>
+        </div>
+        <div class="dice">
+          <img src="images/1.png" alt="dice" id="dice" />
+        </div>
+        <div class="player">
+          <h3>Player-2</h3>
+          <h1 id="player2-score">00</h1>
+          <button
+            type="button"
+            id="player2-button"
+            onclick="handleDiceRoll('Player-2')"
+          >
+            Roll Now
+          </button>
+        </div>
+      </div>
+      <div class="reset">
+        <button type="button" onclick="handleReset()">RESET</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>Memory Card Game</title>
+  </head>
+  <body onload="initializeGame()">
+    <div class="main">
+      <div class="header">
+        <b>Memory Card Game</b>
+        <h1 id="game-status">Let's Play!</h1>
+      </div>
+      <div class="game-board">
+        <!-- 16 cards -->
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+        <div class="card" onclick="flipCard(this)"></div>
+      </div>
+      <div class="reset">
+        <button type="button" onclick="handleReset()">RESET</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
